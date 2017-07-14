@@ -53,7 +53,7 @@ public class StockVolume {
 		    Job job = Job.getInstance(conf, "Volume Count");
 		    job.setJarByClass(StockVolume.class);
 		    job.setMapperClass(MapClass.class);
-		    job.setCombinerClass(ReduceClass.class);
+		    //job.setCombinerClass(ReduceClass.class);
 		    job.setReducerClass(ReduceClass.class);
 		    //job.setNumReduceTasks(0);
 		    job.setOutputKeyClass(Text.class);
